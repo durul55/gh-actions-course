@@ -29,5 +29,5 @@ jobs:
               env:
                 MY_VAR: 'Durul Baba'
               run:
-                echo "Step Variable: ${{var.MY_VAR}}"       
+                echo "Step Variable: ${{env.MY_VAR}}"       
 
