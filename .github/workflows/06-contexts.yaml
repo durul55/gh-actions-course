@@ -22,12 +22,10 @@ jobs:
                 echo "Workflow: ${{github.workflow}}"
                 echo "Run ID: ${{github.run_id}}"
                 echo "Run number: ${{github.run_number}}"
-            - name: Retrieve Variable
-              run: |
-                echo "Variable value: ${{vars.MY_VAR}}"    
+              
             - name: Print Env Variables
               env:
                 MY_VAR: 'Durul Baba'
               run:
-                echo "Step Variable: ${{env.MY_VAR}}"       
+                echo "Durul Baba Variable: ${{ env.MY_VAR }}"       
 
